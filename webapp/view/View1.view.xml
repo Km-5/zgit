@@ -45,9 +45,6 @@
 					<Column	hAlign="Center">
 						<Text text="Upload date" />
 					</Column>
-                    <Column	hAlign="Center">
-						<Text text="changes" />
-					</Column>
                     <Column	hAlign="End">
 						<Text text="Status" />
 					</Column>
