@@ -1,0 +1,55 @@
+<mvc:View
+    controllerName="demo.projectdoc.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.f">
+		
+			<f:DynamicPage id="app"
+				   toggleHeaderOnTitleClick="false">
+		<!-- DynamicPage Title -->
+		<f:title>
+			<f:DynamicPageTitle>
+				<f:heading>
+					<Title text="{i18n>title}"/>
+				</f:heading>
+			</f:DynamicPageTitle>
+		</f:title>
+
+		<!-- DynamicPage Content -->
+		<f:content>
+			<Table id="doc"
+				   inset="false"
+				   class="sapFDynamicPageAlignContent"
+				   width="auto">
+				<headerToolbar>
+					<OverflowToolbar class="sapUiMediumMarginBottom">
+                   		<ToolbarSpacer/>
+						<SearchField search="onSearch" width="17.5rem" placeholder="Search document by name"/>
+						<OverflowToolbarButton icon="sap-icon://add" type="Transparent" press="onAdd"/>
+						<OverflowToolbarButton icon="sap-icon://sort" type="Transparent" press="onSort"/>
+                        <OverflowToolbarButton icon="sap-icon://filter" type="Transparent" press="onfilter"/>
+					</OverflowToolbar>
+				</headerToolbar>
+            
+				<columns>
+					<Column width="20em">
+						<Text text="Document name" />
+					</Column>
+                    <Column	hAlign="Begin">
+						<Text text="Document type" />
+					</Column>
+                    <Column	hAlign="Initial">
+						<Text text="Assigned_to" />
+					</Column>
+					<Column	hAlign="Center">
+						<Text text="Upload date" />
+					</Column>
+                    <Column	hAlign="End">
+						<Text text="Status" />
+					</Column>
+				</columns>
+			</Table>
+		</f:content>
+        </f:DynamicPage>
+</mvc:View>
