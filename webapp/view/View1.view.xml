@@ -29,26 +29,49 @@
 						<OverflowToolbarButton icon="sap-icon://add" type="Transparent" press="onAdd"/>
 						<OverflowToolbarButton icon="sap-icon://sort" type="Transparent" press="onSort"/>
                         <OverflowToolbarButton icon="sap-icon://filter" type="Transparent" press="onfilter"/>
+                        <OverflowToolbarButton icon="sap-icon://group-2" type="Transparent" press="ongroup"/>
+                        <OverflowToolbarButton icon="sap-icon://action-settings" type="Transparent" press="onsettings"/>
 					</OverflowToolbar>
 				</headerToolbar>
             
 				<columns>
-					<Column width="20em">
+					<Column width="20em" hAlign="Begin">
 						<Text text="Document name" />
 					</Column>
+                     <Column	hAlign="Begin">
+						<Text text="Status" />
+					</Column>
+                    <Column	hAlign="Begin">
+						<Text text="Assigned_to" />
+					</Column>
+                     <Column	hAlign="Begin">
+						<Text text="step" />
+					</Column>
+
                     <Column	hAlign="Begin">
 						<Text text="Document type" />
 					</Column>
-                    <Column	hAlign="Initial">
-						<Text text="Assigned_to" />
+                     <Column	hAlign="Begin">
+						<Text text="Category" />
 					</Column>
-					<Column	hAlign="Center">
+                     <Column	hAlign="Begin">
+						<Text text="Last changed" />
+					</Column>
+					<Column	hAlign="Begin">
 						<Text text="Upload date" />
 					</Column>
-                    <Column	hAlign="End">
-						<Text text="Status" />
+                     <Column	hAlign="Begin">
+						<Text text="action" />
 					</Column>
 				</columns>
+
+                <items>
+			<ColumnListItem>
+				<cells>
+					
+                        	</cells>
+                        	</ColumnListItem>
+		</items>
 			</Table>
 		</f:content>
         </f:DynamicPage>
